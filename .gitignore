@@ -1,0 +1,9 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+*.apk
+# libs directory is needed for Android Studio projects
+!libs/
