@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="20dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="AEFS protects your files"
+        android:textSize="28sp"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:minWidth="20dp"
+        android:inputType="textPassword"
+        android:id="@+id/password"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle Pass"
+        android:id="@+id/btn_pass"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right" />
+
+    <Button
+        android:id="@+id/encryptFile"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        android:text="Encrypt File \nSelect file" />
+
+
+    <Button
+        android:id="@+id/decryptFile"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        android:text="Decrypt File \nSelect file" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="DHKE parameters"
+        android:padding="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate DHKE"
+        android:id="@+id/btn_DHKE"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Public Key"
+        android:id="@+id/txt_publicKey" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="p"
+        android:id="@+id/txt_p"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_g"
+        android:hint="g"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recieve DHKE"
+        android:id="@+id/btn_reciveDHKE"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
+
+</ScrollView>
